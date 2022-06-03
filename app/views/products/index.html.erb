@@ -1,0 +1,29 @@
+<p style="color: green"><%= notice %></p>
+
+<h1 class="text-center">Products</h1>
+
+<div id="products">
+<table class="table table-border" width ="100%">
+  <thead>
+    <tr>
+      <th>Código Prod</th>
+      <th>Descr. Prod</th>
+      <th>Unid.Vta</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  <% @products.each do |product| %>
+    <tr id="<%= dom_id product %>">
+      <td> <%= product.code %></td>
+      <td> <%= product.description %></td>
+      <td> <%= product.salesUnit %></td>
+      <td> <%= link_to "Edit this product", edit_product_path(product) %> </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= paginate @products %>
+</div>
+
+<%= link_to "New product", new_product_path %>
