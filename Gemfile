@@ -73,3 +73,10 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Devise 
+gem 'devise'
+# Gemfile
+gem 'activeadmin'
+
+gem 'sass-rails'
