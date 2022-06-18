@@ -2,6 +2,13 @@
 
 <h1 class="text-center">Products</h1>
 
+<%= search_form_for @q do |f| %>
+<%= f.label :salesUnit_cont %>
+<%= f.search_field :salesUnit_cont %>
+
+<%= f.submit %>
+<% end %>
+
 <div id="products">
 <table class="table table-border" width ="100%">
   <thead>

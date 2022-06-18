@@ -80,3 +80,5 @@ gem 'devise'
 gem 'activeadmin'
 
 gem 'sass-rails'
+
+gem 'ransack'
