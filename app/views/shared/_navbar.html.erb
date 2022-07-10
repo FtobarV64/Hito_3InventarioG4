@@ -20,6 +20,7 @@
     </li>
     <li class="nav-item">
         <%= link_to "Producto", products_path, class: "nav-link" %>
+        
     </li>
 
     <li class="nav-item">
@@ -30,10 +31,13 @@
         <a class="nav-link" href="#Ingreso">Ingreso</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#Cliente">Cliente</a>
+        <%= link_to "Clients", clients_path, class: "nav-link" %>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#Pedido">Pedido</a>
+        <%= link_to "Orders", orders_path, class: "nav-link" %>
+    </li>
+    <li class="nav-item">
+        <%= link_to "Log In", admin_user_session_path, class: "nav-link" %>
     </li>
     </ul>
 </div>
