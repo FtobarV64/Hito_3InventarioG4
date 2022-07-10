@@ -1,5 +1,5 @@
 class OrdersController < InheritedResources::Base
-
+  before_action :authenticate_admin_user!
   private
 
     def order_params

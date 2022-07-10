@@ -1,5 +1,5 @@
 class ClientsController < InheritedResources::Base
-
+  before_action :authenticate_admin_user!
   private
 
     def client_params
